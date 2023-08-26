@@ -43,6 +43,7 @@ beforeEach(() => {
                 budget: 200000,
                 staffCount: 200,
                 address: {
+                    number: 2,
                     street: {
                         title: 'Central Str',
                     }
@@ -53,6 +54,7 @@ beforeEach(() => {
                 budget: 200000,
                 staffCount: 200,
                 address: {
+                    number: 1,
                     street: {
                         title: 'South Str'
                     }
