@@ -14,7 +14,7 @@ type TechnologiesType = {
     title: string
 }
 
-type StudentType = {
+export type StudentType = {
     name: string
     age: number
     isActive: boolean
@@ -22,7 +22,7 @@ type StudentType = {
     technologies: TechnologiesType[]
 }
 
-const student: StudentType = {
+export const student: StudentType = {
     name: 'Galina',
     age: 30,
     isActive: true,
