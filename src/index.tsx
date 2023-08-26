@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {splitIntoWords} from './tests01/HelloTests01';
+import {splitIntoWords} from './lesson01/tests01/HelloTests01';
 
 const sentense = "Hello my friend!"
 const  result = splitIntoWords(sentense)
