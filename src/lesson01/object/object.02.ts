@@ -59,20 +59,20 @@ console.log(student.address.country)
 console.log(student.technologies[2].title)
 
 
-type AddressType = {
+export type AddressType = {
     number: number;
     street: {
         title: string;
     };
 }
 
-type HouseType = {
+export type HouseType = {
     buildedAt: number;
     repaired: boolean;
     address: AddressType;
 }
 
-type GovernmentBuildingType = {
+export type GovernmentBuildingType = {
     type: "HOSPITAL" | "FIRE-STATION";
     budget: number;
     staffCount: number;

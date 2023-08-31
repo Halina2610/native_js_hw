@@ -43,18 +43,18 @@ beforeEach(() => {
                 budget: 200000,
                 staffCount: 200,
                 address: {
-                    number: 2,
+                    number: 1,
                     street: {
                         title: 'Central Str',
                     }
                 }
             },
             {
-                type: 'HOSPITAL',
-                budget: 200000,
-                staffCount: 200,
+                type: 'FIRE-STATION',
+                budget: 500000,
+                staffCount: 1000,
                 address: {
-                    number: 1,
+                    number: 2,
                     street: {
                         title: 'South Str'
                     }

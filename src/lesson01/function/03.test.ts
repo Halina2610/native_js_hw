@@ -1,9 +1,9 @@
 import {StudentType} from '../object/object.02';
-import {addSkill} from './function.03';
+import {addSkill, cityLives, makeStudentActive} from './function.03';
 
 let student: StudentType;
 
-beforeEach(()=>{
+beforeEach(() => {
     student = {
         name: 'Galina',
         age: 30,
@@ -11,7 +11,7 @@ beforeEach(()=>{
         address: {
             'live in': {
                 city: 'Ushachi',
-                street: "Vitebskaya",
+                street: 'Vitebskaya',
             },
             country: 'Belarus',
         },
@@ -36,9 +36,25 @@ beforeEach(()=>{
     }
 })
 
-test("new tech skill should be added to student", ()=> {
+test('new tech skill should be added to student', () => {
+    expect(student.technologies.length).toBe(4);
+    addSkill(student, 'TS');
 
-    addSkill()
+    expect(student.technologies.length).toBe(5);
+    expect(student.technologies[4].title).toBe('TS');
+    expect(student.technologies[3].title).toBeDefined();// определен id.
+});
+test('student to be is active', () => {
 
+    makeStudentActive(student);
+    expect(student.isActive).toBe(false)
 
+});
+
+test('does student live in city', () => {
+    let result = cityLives(student, 'Minsk');
+    let result2 = cityLives(student, 'Moscow')
+
+    expect(result).toBe(false)
+    expect(result2).toBe(false)
 })
