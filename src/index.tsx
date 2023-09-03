@@ -1,27 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {splitIntoWords} from './monday/tests01/HelloTests01';
-
-const sentense = "Hello my friend!"
-const  result = splitIntoWords(sentense)
-console.log(result[0] === "hello")
-console.log(result[1] === "my")
-console.log(result[2] === "friends")
-
-
-
-
-
-
-
+import {User} from './monday/callback/callback_06';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-root.render(<App />);
+root.render(<User />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
